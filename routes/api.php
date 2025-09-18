@@ -8,8 +8,11 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
-Route::middleware('auth:sanctum')->group(function () {
+Route::middleware(['auth:sanctum','role:admin'])->group(function () {
     Route::apiResource('books', BookController::class);
+});
+
+Route::middleware('auth:sanctum')->group(function () {
     Route::post('loans', [LoanController::class, 'store']);
     Route::get('loans/', [LoanController::class, 'index']);
 });

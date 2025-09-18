@@ -63,6 +63,26 @@ php artisan migrate --seed
 
 ---
 
+🔑 Otentikasi & Role
+
+Aplikasi ini menggunakan Sanctum. Terdapat 2 role:
+
+Admin → dapat membuat, mengedit, dan menghapus buku.
+
+User → hanya bisa meminjam dan melihat buku.
+
+Seeder Awal
+
+Saat menjalankan php artisan migrate --seed, akun berikut otomatis dibuat:
+
+Admin
+
+{
+  "email": "admin@example.com",
+  "password": "password"
+}
+
+
 ## Running the Server
 ```bash
 php artisan serve
