@@ -74,8 +74,8 @@ User → hanya bisa meminjam dan melihat buku.
 Seeder Awal
 
 Saat menjalankan php artisan migrate --seed, akun berikut otomatis dibuat:
-
-Admin
+10 User dan 30 Buku dan,
+1 Admin
 
 {
   "email": "admin@example.com",

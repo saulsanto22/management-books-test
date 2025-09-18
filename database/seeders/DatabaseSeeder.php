@@ -14,23 +14,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+
         User::factory(10)->create();
 
-        // Buat 30 book
         Book::factory(30)->create();
 
-        // Optional: buat 1 user spesial untuk testing login
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
             'password' => bcrypt('password'),
         ]);
 
-           User::factory()->create([
+        User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@example.com',
-            'role'=> 'admin',
+            'role' => 'admin',
             'password' => bcrypt('password'),
         ]);
 
