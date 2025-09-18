@@ -141,6 +141,6 @@ class BookController extends Controller
     {
         $this->bookService->delete($id);
 
-        return ApiResponse::success(null, 'Book deleted', 204);
+        return ApiResponse::success(null, 'Book deleted', 200);
     }
 }
