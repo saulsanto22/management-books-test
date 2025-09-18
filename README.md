@@ -1,4 +1,4 @@
-# ðŸ“š Library Management API (Laravel 12)
+# 📚 Library Management API (Laravel 12)
 
 Backend API untuk sistem manajemen perpustakaan sederhana.  
 Dibuat menggunakan **Laravel 12**, **Sanctum**, **MySQL**, dan sudah dilengkapi dengan **Swagger Docs** + **Unit Test**.
