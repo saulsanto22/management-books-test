@@ -5,16 +5,16 @@ Dibuat menggunakan **Laravel 12**, **Sanctum**, **MySQL**, dan sudah dilengkapi 
 
 ---
 
-## âš¡ Features
-- ðŸ” **Authentication**
+## ⚡ Features
+- 🔐 **Authentication**
   - Register, Login, Logout (JWT-like via Sanctum)
-- ðŸ“– **Books**
+- 📖 **Books**
   - CRUD buku + pagination & filtering (search, author, year)
-- ðŸ“‘ **Loans**
+- 📖 **Loans**
   - Pinjam buku (stok berkurang)
   - Tidak bisa pinjam jika stok 0
   - List pinjaman user
-- ðŸ›  **Bonus**
+- **Bonus**
   - Swagger API docs
   - Response helper (standard JSON)
   - Clean Architecture (Service, Request, Resource, Controller)
@@ -22,7 +22,7 @@ Dibuat menggunakan **Laravel 12**, **Sanctum**, **MySQL**, dan sudah dilengkapi 
 
 ---
 
-## ðŸ—ï¸ Installation
+## 🏗 Installation
 
 ### 1. Clone Repository
 ```bash
@@ -63,7 +63,7 @@ php artisan migrate --seed
 
 ---
 
-## ðŸš€ Running the Server
+## Running the Server
 ```bash
 php artisan serve
 ```
@@ -74,7 +74,7 @@ http://127.0.0.1:8000/api
 
 ---
 
-## ðŸ”‘ API Endpoints
+## API Endpoints
 
 ### Auth
 - `POST /api/register`
@@ -94,7 +94,7 @@ http://127.0.0.1:8000/api
 
 ---
 
-## ðŸ“– API Documentation (Swagger)
+##  API Documentation (Swagger)
 
 Generate docs:
 ```bash
@@ -108,7 +108,7 @@ http://127.0.0.1:8000/api/documentation
 
 ---
 
-## ðŸ§ª Testing
+## 🧪 Testing
 
 Jalankan unit test:
 ```bash
@@ -123,15 +123,18 @@ php artisan test --filter=LoanTest
 ```
 
 ---
+## 🛠 Tech Stack
+-  ⚡ Laravel 12 (PHP 8.2+)
 
-## ðŸ›  Tech Stack
-- Laravel 12 (PHP 8.2+)
-- Sanctum (Auth)
-- MySQL (DB)
-- PHPUnit (Testing)
-- L5-Swagger (Docs)
+-  🔐 Sanctum (Auth)
+
+-  🗄  MySQL (DB)
+
+-  ✅ PHPUnit (Testing)
+
+-  📜 L5-Swagger (Docs)
 
 ---
 
-## ðŸ‘¨â€ðŸ’» Author
+ ## 👨‍💻 Author
 Dikerjakan sebagai **Backend Developer Technical Test** menggunakan Laravel best practices.
