@@ -97,9 +97,9 @@ http://127.0.0.1:8000/api
 ## API Endpoints
 
 ### Auth
-- `POST /api/register`
-- `POST /api/login`
-- `POST /api/logout`
+- `POST /api/auth/register`
+- `POST /api/auth/ogin`
+- `POST /api/auth/gout`
 
 ### Books
 - `GET /api/books`
